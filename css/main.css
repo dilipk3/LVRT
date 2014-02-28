@@ -1,0 +1,23 @@
+@charset "utf-8";
+/* CSS Document */
+
+body, html { height: 100%; font-family:'Open Sans', sans-serif;}
+
+
+#wrap {
+    height: auto !important;
+   
+    min-height: 100%;
+}
+
+header#top {background-color:#333333; }
+ .pink { color:#F6C; }
+
+.form-control { width: 40%;}
+.mainContent {color:#888888;}
+.centerAlign {text-align:center;}
+.footer { color: rgba(255, 255, 255, 0.5); height:60px; background-color:#333333; padding:20px;}
+
+.progress-bar {  background-color: #C8C8C8 !important; background-image:linear-gradient(to bottom, #C8C8C8 0px, #cccccc 100%) !important; }
+
+

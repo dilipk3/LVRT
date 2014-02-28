@@ -1,0 +1,110 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>LVRT</title>
+<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css' />
+<link rel="stylesheet" href="css/normalize.css" />
+<link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" />
+<link rel="stylesheet" href="css/main.css" />
+<!-- Optional theme -->
+<link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css" />
+<script src="http://code.jquery.com/jquery-latest.min.js"
+        type="text/javascript"></script>
+<!-- Latest compiled and minified JavaScript -->
+<script src="http://netdna.bootstrapcdn.com/bootstrap/3.1.0/js/bootstrap.min.js"></script>
+<script type="text/javascript">
+$(document).ready(function(e) {
+    $('.hasPopover').popover({trigger: 'focus'});
+});
+
+ $('#btn-next').click(function () {
+	 alert('a');
+    var btn = $(this)
+    btn.button('loading')
+    $.ajax("http://gogle.com").always(function () {
+      btn.button('reset')
+    });
+  });
+
+</script>
+</head>
+
+<body>
+<div id="wrap">
+  <header id="top" class="navbar navbar-static-top bs-docs-nav" role="banner">
+    <div class="container">
+      <h1><a href="index.html"><span class="pink">LVRT</span></a></h1>
+    </div>
+  </header>
+  <div class="container mainContent">
+    <div class="page-header">
+      <h2>Sponser Signup</h2>
+    </div>
+    
+    <form role="form">
+
+    <div class="progress"></div>
+
+ <div class="form-group">
+    <label for="CompanyName">Company Name</label>
+    <input type="text" class="form-control" id="CompanyName" placeholder="Your Company Name">
+  </div>
+  
+   <div class="form-group">
+    <label for="CampaignAdmin">Campaign Administrator</label>
+    <input type="text" class="form-control" id="CampaignAdmin" placeholder="Your Name">
+  </div>
+
+   <div class="form-group">
+    <label for="CampaignAdminInputEmail">Primary Email</label>
+    <input type="email" class="form-control" id="CampaignAdminEmail" placeholder="Enter Primary Email">
+  </div>
+  
+   <div class="form-group">
+    <label for="CampaignAdminInputPhone">Phone Number</label>
+    <input type="phone" class="form-control" id="PhoneNumber" placeholder="(xxx) xxx-xxxx">
+  </div>
+  
+   <div class="form-group">
+    <label for="Password">Password</label>
+    <input type="password" class="form-control hasPopover" id="Password" placeholder="Enter Password" data-container="body" data-toggle="popover" data-placement="right" data-content="Must be over 8 Characters and Contain a number">
+  </div>
+  
+   <div class="form-group">
+    <label for="VerifyPass">Verify Password</label>
+    <input type="password" class="form-control" id="VerifyPassword" placeholder="Enter Password">
+  </div>
+
+  <div class="progress"></div>
+  
+  <h3>Payment Information</h3>
+  
+ <div class="form-group">
+    <label for"BankName">Bank</label>
+	<input type="text" class="form-control" id="BankName" placeholder="Enter Name of your Bank">
+ </div>
+  
+  <div class="form-group">
+    <label for="BankNumber">Bank Number</label>
+	<input type="text" class="form-control" id="BankNumber" placeholder="Enter Bank Number">
+  </div>
+  
+  <div class="form-group">
+  	<label for="ETFnumber">ETF Number</label>
+	<input type="text" class="form-control hasPopover" id="ETFNumber" placeholder="Enter Bank ETF Number" data-container="body" data-toggle"popover" data-placement="right" data-content="ETF = Exchange Traded Funds">
+  </div>
+  
+<button type="button" id="btn-next" data-loading-text="Loading..." class="btn btn-default" >Next</button>
+  
+
+ 
+</form>
+ 
+  </div>
+</div>
+<footer class="footer" role="contentinfo">
+  <div class="container centerAlign"> Created with <span class="pink">LVE</span> for <span class="pink">RTSTS</span> </div>
+</footer>
+</body>
+</html>
