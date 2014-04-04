@@ -2,6 +2,15 @@ body
 {
     background-color: #FAFAFA;
 }
+
+.leftTable {
+    height:100%;
+}
+.leftTable .playerWrapper
+{
+    height:100%;
+    vertical-align: bottom;
+}
 #menu {
     background: none repeat scroll 0 0 #333333;
     bottom: 0;
@@ -10,7 +19,7 @@ body
     overflow-y: auto;
     position: fixed;
     top: 0;
-    width: 160px;
+    width: 300px;
     z-index: 1000;
 }
 
@@ -37,7 +46,7 @@ background-color: #525252;
 #main
 {
 	
-	margin-left:160px;
+	margin-left:260px;
 }
 
 .topContainer
